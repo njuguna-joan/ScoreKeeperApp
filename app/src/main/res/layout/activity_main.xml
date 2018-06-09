@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF">
+
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    tools:context="com.example.joan.scorekeeperapp.MainActivity"
+    android:baselineAligned="false">
+
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        tools:context="com.example.joan.scorekeeperapp.MainActivity">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:paddingBottom="24dp"
+            android:textSize="14sp"
+            android:textColor="#616161"
+            android:fontFamily="sans-serif-medium"
+            android:text="@string/chelsea"
+            android:textAllCaps="true"
+            tools:targetApi="jelly_bean" />
+
+        <TextView
+            android:id="@+id/chelsea_points"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:paddingBottom="24dp"
+            android:textSize="56sp"
+            android:textColor="#000000"
+            android:fontFamily="sans-serif-light"
+            android:text="@string/_0" tools:targetApi="jelly_bean" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="24dp"
+            android:layout_marginRight="24dp"
+            android:onClick="addThreeForChelsea"
+            android:text="@string/win" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="24dp"
+            android:layout_marginRight="24dp"
+            android:onClick="addOneForChelsea"
+            android:text="@string/draw" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="24dp"
+            android:layout_marginRight="24dp"
+            android:onClick="addZeroForChelsea"
+            android:text="@string/loose" />
+        <ImageView
+            android:layout_width="200dp"
+            android:layout_height="100dp"
+            android:src="@drawable/chelsea" android:contentDescription="@string/todo" />
+
+    </LinearLayout>
+
+
+    <View
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:paddingTop="16dp"
+        android:background="@android:color/darker_gray"/>
+
+
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        tools:context="com.example.joan.scorekeeperapp.MainActivity">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:paddingBottom="24dp"
+            android:textSize="14sp"
+            android:textColor="#616161"
+            android:fontFamily="sans-serif-medium"
+            android:text="@string/brighton"
+            android:textAllCaps="true"
+            tools:targetApi="jelly_bean" />
+
+        <TextView
+            android:id="@+id/brighton_points"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:paddingBottom="24dp"
+            android:textSize="56sp"
+            android:textColor="#000000"
+            android:fontFamily="sans-serif-light"
+            android:text="@string/_0" tools:targetApi="jelly_bean" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="22dp"
+            android:layout_marginRight="22dp"
+            android:onClick="addThreeForBrighton"
+            android:text="@string/win" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="24dp"
+            android:layout_marginRight="24dp"
+            android:onClick="addOneForBrighton"
+            android:text="@string/draw" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="22dp"
+            android:layout_marginRight="22dp"
+            android:onClick="addZeroForBrighton"
+            android:text="@string/loose" />
+
+        <ImageView
+            android:layout_width="200dp"
+            android:layout_height="100dp"
+            android:src="@drawable/brighton" android:contentDescription="@string/todo" />
+
+    </LinearLayout>
+</LinearLayout>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/reset"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="32dp"
+            android:onClick="resetScore"/>
+
+</RelativeLayout>

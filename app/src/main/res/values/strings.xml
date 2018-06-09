@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Score Keeper App</string>
+    <string name="chelsea">Chelsea</string>
+    <string name="_0">0</string>
+    <string name="win">WIN</string>
+    <string name="draw">DRAW</string>
+    <string name="loose">LOOSE</string>
+    <string name="brighton">Brighton</string>
+    <string name="reset">Reset</string>
+    <string name="todo">TODO</string>
+
+
+</resources>
